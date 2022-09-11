@@ -9,6 +9,6 @@
 */
 int main(void)
 {
-	printf("Size of a float: %1d byte(s)\n", sizeof(f));
+	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
 }
