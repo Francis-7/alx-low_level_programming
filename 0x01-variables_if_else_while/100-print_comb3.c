@@ -1,29 +1,33 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
- * main - entry point
  *
- * codes for printng all posiblr compination digit numbers
- * in ascending order and seperated by a comma followd by a space.
  *
- * Return: 0 success 
+ * Description: print
+ *
+ *
+ *
  */
-int main(void)
+int main()
 {
-	int digit1, digit2;
-	for (digit1 = 0; digit1 < 9; digit1++);
+	int n1 = 0, n2;
+	while(n1 <= 9)
 	{
-		for (digit2 = digit1 + 1; digit2 < 10; digit2++);
+		n2 = 0;
+		while(n2 <= 9)
 		{
-			putchar((digit1 % 10) + '0');
-			putchar((digit2 % 10) + '0');
-
-			if (digit1 == 8 && digit2 == 9)
-				continue;
-
-			putchar(',');
-			putchar(' ');
+			if(n1 != n2 && n1 < n2)
+			{
+				putchar(n1 + 48);
+				putchar(n2 + 48);
+				if(n1 + n2 != 17)
+					putchar(',');
+				putchar(' ');
+			}
 		}
+		++n2;
 	}
-	putchar('\n');
-	return(0);
+	++n1;
+	putchar
+		return 0;
 }
