@@ -4,9 +4,11 @@
 *
 *main - print digit numbers starting from 0
 *
+*Description: this program  prints all possible different combinations of two digits
+*
 *Return: returns zero at the end
 */
-int main(void)
+int main()
 {
 	int i,j;
 
