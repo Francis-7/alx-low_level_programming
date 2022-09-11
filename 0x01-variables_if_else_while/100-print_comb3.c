@@ -1,34 +1,32 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 /**
- *
- *
- * Description: print
- *
- *
- *
- */
-int main()
+*
+*main - print digit numbers starting from 0
+*
+*Return: returns zero at the end
+*/
+int main(void)
 {
-	int n1 = 0, n2;
-	
-	while(n1 <= 9)
+	int i,j;
+
+	for(i = 0; i <= 9; i++)
 	{
-		n2 = 0;
-		while(n2 <= 9)
+		for(j = 0; j <= 9; j++)
 		{
-			if(n1 != n2 && n1 < n2)
+			if(j > i)
 			{
-				putchar(n1 + 48);
-				putchar(n2 + 48);
-				if(n1 + n2 != 17)
-				putchar(',');
-				putchar(' ');
+				putchar(i + '0');
+				putchar(j + '0');
+				if(i != 8)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
-		++n2;
 	}
-	++n1;
-	putchar;
-	return 0;
+	putchar('\n');
+	return (0);
 }
+	
