@@ -11,6 +11,7 @@
 int main()
 {
 	int n1 = 0, n2;
+	
 	while(n1 <= 9)
 	{
 		n2 = 0;
@@ -21,13 +22,13 @@ int main()
 				putchar(n1 + 48);
 				putchar(n2 + 48);
 				if(n1 + n2 != 17)
-					putchar(',');
+				putchar(',');
 				putchar(' ');
 			}
 		}
 		++n2;
 	}
 	++n1;
-	putchar
-		return 0;
+	putchar;
+	return 0;
 }
