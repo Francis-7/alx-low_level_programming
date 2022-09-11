@@ -1,13 +1,14 @@
 #include <stdio.h>
 
 /**
-*
-*main - print digit numbers starting from 0
-*
-*Description: this program  prints all possible different combinations of two digits
-*
-*Return: returns zero at the end
-*/
+ *
+ *main - print digit numbers starting from 0
+ *
+ * Description: program that prints all possible different combinations of two digits
+ * 
+ * Return: returns zero at the end
+ *
+ */
 int main()
 {
 	int i,j;
