@@ -1,26 +1,24 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-void printnumber(int n)
+void printnumber(int i)
 {
-
-   if (n < 0) {
-       putchar('-');
-       n = -n;
-   }
-
-   if (n == 0)
-      putchar('0');
-
-   if (n/10)
-      printnumber(n/10);
-
-   putchar(n%10 + '0');
-}
-
-int main(int argc, char** argv)
-{
-   int n = atoi(argv[1]);
-   printnumber(n);
-   printf("\n");
+    if(i/10!=0)
+    {
+        printnumber(i/10);
+        if ( i > 0 )
+        {
+           putchar(i%10 + '0');
+        }
+        else
+        {
+           putchar(-i%10 + '0');
+        }
+    }
+    else if((i/10==0) && (i%10!=0) && (i>0))
+    {
+        putchar(i%10 + '0');
+    }
+    else if((i/10==0) && (i%10!=0) && (i<=0))
+    {
+        putchar('-');
+        putchar(-i%10+'0');
+    }    
 }
