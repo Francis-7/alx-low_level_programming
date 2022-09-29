@@ -15,5 +15,7 @@ int _sqrt(int n, int x);
 int _is_prime(int n, int start);
 void check(char *s, int start, int end, int *flag);
 int wildcmp(char *s1, char *s2);
+int find_sqrt(int num, int root);
+int _sqrt_recursion(int n);
 
 #endif /*MAIN_H*/
