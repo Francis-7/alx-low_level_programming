@@ -7,7 +7,7 @@
  *
  * Return: pointer to reallocated memory of process termination if error
  */
-void malloc_checked(unsigned int b)
+void *malloc_checked(unsigned int b)
 {
 	void *p;
 
