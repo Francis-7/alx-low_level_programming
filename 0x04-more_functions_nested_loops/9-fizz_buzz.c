@@ -1,23 +1,32 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * *_strcpy - See description
- * @dest: char type string
- * @src: char type string
- * Description: Copy the string pointed to by pointer `src` to
- * the buffer pointed to by `dest`
- * Return: Pointer to `dest`
+ * main - main block, solve fizz buzz from numbers 1 to 100
+ * Description: Multiples of 3, print Fizz. Multiples of 5, print Buzz.
+ * Multiples of both 3 and 5 should print FizzBuzz.
+ * Return: 0
  */
-
-char *_strcpy(char *dest, char *src)
+int main(void)
 {
 	int i;
 
-	for (i = 0; src[i] != '\0'; i++)
+	i = 1;
+	while (i <= 100)
 	{
-		dest[i] = src[i];
-	}
-	dest[i] = '\0';
+		if (i % 3 == 0 && i % 5 == 0)
+			printf("FizzBuzz");
+		else if (i % 3 == 0)
+			printf("Fizz");
+		else if (i % 5 == 0)
+			printf("Buzz");
+		else
+			printf("%d", i);
 
-	return (dest);
+		if (i != 100)
+			printf(" ");
+		i++;
+	}
+	printf("\n");
+
+	return (0);
 }
