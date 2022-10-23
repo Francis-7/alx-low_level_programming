@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
  * main - check the code for Holberton School students.
@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	jack_baver();
+	jack_bauer();
 	return (0);
 }
