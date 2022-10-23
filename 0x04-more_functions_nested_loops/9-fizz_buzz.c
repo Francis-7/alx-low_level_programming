@@ -1,44 +1,23 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
-*main - program that prints either number
-*or fizz or buzz or fizzBuzz
-*
-*
-*Return: returns 0
-*/
+ * *_strcpy - See description
+ * @dest: char type string
+ * @src: char type string
+ * Description: Copy the string pointed to by pointer `src` to
+ * the buffer pointed to by `dest`
+ * Return: Pointer to `dest`
+ */
 
-int main(void)
+char *_strcpy(char *dest, char *src)
 {
-	int num = 1;
+	int i;
 
-	while (num++ < 100)
+	for (i = 0; src[i] != '\0'; i++)
 	{
-		if ((num % 3 == 0) && (num % 5 == 0))
-		{
-			printf("FizzBuzz ");
-		}
-		else if ((num % 3) == 0)
-		{
-			printf("Fizz ");
-		}
-		else if ((num % 5) == 0)
-		{
-			if (num != 100)
-			{
-				printf("Buzz ");
-			}
-			else
-			{
-				printf("Buzz");
-			}
-		}
-		else
-		{
-			printf("%d ", num);
-		}
+		dest[i] = src[i];
 	}
-	printf("\n");
+	dest[i] = '\0';
 
-	return (0);
+	return (dest);
 }
